@@ -185,7 +185,9 @@ void Ground::ReshapeGround(const Matrix4 &view_matrix, const Matrix4 &proj_matri
 
     // Calculate plane normal
     Vector3 plane_normal = (p_end - p_start).Cross(up).ToUnit();
-
+    if (look.Dot(plane_normal) > 0) {
+        plane_normal = -plane_normal;
+    }
 
     
     
