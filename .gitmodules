@@ -1,0 +1,4 @@
+[submodule "dev/MinGfx"]
+	path = dev/MinGfx
+	url = https://github.com/ivlab/MinGfx.git
+	branch = master
